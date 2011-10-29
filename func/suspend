@@ -1,0 +1,5 @@
+#autoload -U
+#vim: set ft=zsh
+#
+# sudo apt-get install acpitool xtrlock
+sudo echo "suspending …" && (sudo acpitool -s & xtrlock)

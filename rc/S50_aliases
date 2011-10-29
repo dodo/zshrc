@@ -1,0 +1,32 @@
+#!/bin/zsh
+
+autoload zmv
+alias mmv='noglob zmv -W'
+
+if ( which sudo >/dev/null 2>/dev/null ) ; then
+        alias su='export XAUTHORITY=${HOME}/.Xauthority ; sudo -s'
+        alias sudo='export XAUTHORITY=${HOME}/.Xauthority ; sudo'
+fi
+
+alias du="du -hcs"
+alias df="df -h"
+
+
+alias ls="ls --color=auto"
+alias dir="dir --color=auto"
+alias vdir="vdir --color=auto"
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+
+alias l="ls --color=always -CF"
+alias la="ls --color=always -A"
+alias ll="ls --color=always -l"
+alias lla="ls --color=always -la"
+alias lal="ls --color=always -la"
+
+alias powertop="sudo powertop"
+alias aiccu="sudo aiccu"
+alias i="ip a"
+

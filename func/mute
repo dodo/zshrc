@@ -1,0 +1,5 @@
+#autoload -U
+#vim: set ft=zsh
+#
+amixer -q set 'Front Mic' mute
+amixer -q set 'Front' mute

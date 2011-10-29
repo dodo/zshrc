@@ -1,0 +1,40 @@
+#!/bin/zsh
+
+bindkey -v "^[[3~" delete-char
+bindkey -v "^[[5~" backward-word
+bindkey -v "^[[6~" forward-word
+
+bindkey -v "^[[A" history-beginning-search-backward
+bindkey -v "^[[B" history-beginning-search-forward
+
+bindkey -v "^A" beginning-of-line
+bindkey -v "^E" end-of-line
+bindkey -v "^K" kill-line
+bindkey -v "^L" clear-screen
+bindkey -v "^R" history-incremental-search-backward
+bindkey -v "^U" kill-whole-line
+bindkey -v "^V" quoted-insert
+bindkey -v "^W" backward-kill-word
+
+bindkey -v "^N" down-history
+bindkey -v "^P" up-history
+
+bindkey -v "^[H" run-help
+bindkey -v "^[h" run-help
+
+# alow for editing of the command line
+# http://zshwiki.org/home/examples/zlewidgets
+autoload -U    edit-command-line
+zle -N         edit-command-line
+bindkey -a 'v' edit-command-line
+
+# some fixes
+bindkey '\e[1~'   beginning-of-line  # Linux console
+bindkey '\e[H'    beginning-of-line  # xterm
+bindkey '\eOH'    beginning-of-line  # gnome-terminal
+bindkey '\e[2~'   overwrite-mode     # Linux console, xterm, gnome-terminal
+bindkey '\e[3~'   delete-char        # Linux console, xterm, gnome-terminal
+bindkey '\e[4~'   end-of-line        # Linux console
+bindkey '\e[F'    end-of-line        # xterm
+bindkey '\eOF'    end-of-line        # gnome-terminal
+

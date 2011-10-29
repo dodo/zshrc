@@ -1,0 +1,7 @@
+cache/*
+
+scripts/dvb.sh
+func/dvb
+
+*swp
+*~
