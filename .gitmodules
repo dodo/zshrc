@@ -1,3 +1,6 @@
 [submodule "scripts/youtube-dl"]
 	path = scripts/youtube-dl
 	url = git://github.com/rg3/youtube-dl.git
+[submodule "scripts/springer_download"]
+	path = scripts/springer_download
+	url = git://github.com/milianw/springer_download.git
