@@ -1,1 +1,1 @@
-~/.zsh/scripts/vimeo_downloader.sh
+~/.zsh/scripts/vimeo_downloader.sh $@

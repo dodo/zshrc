@@ -1,1 +1,1 @@
-~/.zsh/scripts/woof.py
+~/.zsh/scripts/woof.py $@
