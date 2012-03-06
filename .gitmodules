@@ -4,3 +4,6 @@
 [submodule "scripts/springer_download"]
 	path = scripts/springer_download
 	url = git://github.com/milianw/springer_download.git
+[submodule "scripts/spark"]
+	path = scripts/spark
+	url = https://github.com/holman/spark.git
