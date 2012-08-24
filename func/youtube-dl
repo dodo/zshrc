@@ -1,1 +1,1 @@
-~/.zsh/scripts/youtube-dl/youtube-dl
+~/.zsh/scripts/youtube-dl/youtube-dl $@
