@@ -1,3 +1,5 @@
 #!/bin/zsh
 
-source ~/.zsh/plugin/highlighting
+
+fpath=(~/.zsh/plugin/completions/src $fpath)
+
