@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+source ~/.zsh/plugin/zaw/zaw.zsh
+
 source ~/.zsh/plugin/highlighting/zsh-syntax-highlighting.zsh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root)
 
