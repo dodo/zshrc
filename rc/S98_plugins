@@ -1,6 +1,7 @@
 #!/bin/zsh
 
 source ~/.zsh/plugin/highlighting/zsh-syntax-highlighting.zsh
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root)
 
 fpath=(~/.zsh/plugin/completions/src $fpath)
 
