@@ -16,3 +16,6 @@
 [submodule "plugin/zaw"]
 	path = plugin/zaw
 	url = git://github.com/zsh-users/zaw.git
+[submodule "plugin/z"]
+	path = plugin/z
+	url = git://github.com/sjl/z-zsh.git

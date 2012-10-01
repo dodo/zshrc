@@ -5,5 +5,13 @@ source ~/.zsh/plugin/zaw/zaw.zsh
 source ~/.zsh/plugin/highlighting/zsh-syntax-highlighting.zsh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root)
 
+
+source ~/.zsh/plugin/z/z.sh
+complete -C 'z --complete "$COMP_LINE"' z
+function precmd () {
+  z --add "$(pwd -P)"
+}
+
+
 fpath=(~/.zsh/plugin/completions/src $fpath)
 
