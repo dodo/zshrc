@@ -1,5 +1,6 @@
 #!/bin/zsh
 
+source ~/.zsh/plugin/highlighting/zsh-syntax-highlighting.zsh
 
 fpath=(~/.zsh/plugin/completions/src $fpath)
 
