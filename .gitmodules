@@ -19,3 +19,6 @@
 [submodule "plugin/z"]
 	path = plugin/z
 	url = git://github.com/sjl/z-zsh.git
+[submodule "scripts/ls--"]
+	path = scripts/ls--
+	url = git://github.com/trapd00r/ls--.git

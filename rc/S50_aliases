@@ -22,9 +22,9 @@ alias egrep='egrep --color=auto'
 
 alias l="ls --color=always -CF"
 alias la="ls --color=always -A"
-alias ll="ls --color=always -l"
-alias lla="ls --color=always -la"
-alias lal="ls --color=always -la"
+alias ll="ls++"
+alias lla="ls++ -a"
+alias lal="lla"
 
 alias powertop="sudo powertop"
 alias aiccu="sudo aiccu"
