@@ -1,4 +1,4 @@
-autoload -U
+#autoload -U
 #vim: set ft=zsh
 #
 tail -n30 /var/log/messages|ccze -A
