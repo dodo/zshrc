@@ -6,8 +6,12 @@ source ~/.zsh/plugin/highlighting/zsh-syntax-highlighting.zsh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root)
 
 
-source ~/.zsh/plugin/z/z.sh
-complete -C 'z --complete "$COMP_LINE"' z
+. ~/.zsh/plugin/z/z.sh
+if complete &>/dev/null; then
+  complete -C 'z --complete "$COMP_LINE"' z
+elif compctl &>/dev/null; then
+  #compctl -K 'z --complete "$COMP_LINE"' z
+fi
 function precmd () {
   z --add "$(pwd -P)"
 }
