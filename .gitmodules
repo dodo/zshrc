@@ -22,3 +22,6 @@
 [submodule "scripts/ls--"]
 	path = scripts/ls--
 	url = git://github.com/trapd00r/ls--.git
+[submodule "scripts/stderred"]
+	path = scripts/stderred
+	url = git://github.com/sickill/stderred.git

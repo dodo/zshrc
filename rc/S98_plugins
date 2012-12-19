@@ -16,6 +16,7 @@ function precmd () {
   z --add "$(pwd -P)"
 }
 
+export LD_PRELOAD="$HOME/.zsh/scripts/stderred/lib64/libstderred.so${LD_PRELOAD:+:$LD_PRELOAD}"
 
 fpath=(~/.zsh/plugin/completions/src $fpath)
 
