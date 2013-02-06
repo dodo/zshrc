@@ -10,7 +10,7 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root)
 if complete &>/dev/null; then
   complete -C 'z --complete "$COMP_LINE"' z
 elif compctl &>/dev/null; then
-  #compctl -K 'z --complete "$COMP_LINE"' z
+  compctl -K 'z --complete "$COMP_LINE"' z
 fi
 function precmd () {
   z --add "$(pwd -P)"

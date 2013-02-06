@@ -84,5 +84,7 @@ CTAGS="--c++-kinds=+p --fields=+iaS --extra=+q"
 export MPD_HOST=127.0.0.1
 export MPD_PORT=6600
 
-. ~/.nvm/nvm.sh
+if [ $UID -eq 1000 ]; then
+  . ~/.nvm/nvm.sh
+fi
 
