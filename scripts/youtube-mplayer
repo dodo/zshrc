@@ -7,4 +7,4 @@
 #
 
 COOKIE_FILE=/tmp/youtube-dl-cookies.txt
-mplayer -cache 9999 -cookies -cookies-file ${COOKIE_FILE} $(~/.zsh/scripts/youtube-dl/youtube-dl -g --cookies ${COOKIE_FILE} $*)
+mplayer -cache 9999 -cookies -cookies-file ${COOKIE_FILE} $(youtube-dl -g --cookies ${COOKIE_FILE} $*)
