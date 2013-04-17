@@ -103,6 +103,11 @@ else
             lprompt '' $PR_BRIGHT_BLACK $PR_BRIGHT_BLUE
             rprompt '' $PR_BRIGHT_GREEN $PR_BRIGHT_BLACK
             ;;
+        mateborg*)
+            lprompt '' $PR_BRIGHT_BLACK $PR_BRIGHT_BLUE
+            rprompt '' $PR_BRIGHT_GREEN $PR_BRIGHT_BLACK
+            ;;
+
 
         *)
             lprompt '{}' $PR_WHITE $PR_WHITE
