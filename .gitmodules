@@ -1,9 +1,24 @@
-[submodule "scripts/youtube-dl"]
-	path = scripts/youtube-dl
-	url = git://github.com/rg3/youtube-dl.git
 [submodule "scripts/springer_download"]
 	path = scripts/springer_download
 	url = git://github.com/milianw/springer_download.git
 [submodule "scripts/spark"]
 	path = scripts/spark
 	url = https://github.com/holman/spark.git
+[submodule "plugin/highlighting"]
+	path = plugin/highlighting
+	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "plugin/completions"]
+	path = plugin/completions
+	url = git://github.com/zsh-users/zsh-completions.git
+[submodule "plugin/zaw"]
+	path = plugin/zaw
+	url = git://github.com/zsh-users/zaw.git
+[submodule "plugin/z"]
+	path = plugin/z
+	url = git://github.com/sjl/z-zsh.git
+[submodule "scripts/ls--"]
+	path = scripts/ls--
+	url = git://github.com/trapd00r/ls--.git
+[submodule "scripts/stderred"]
+	path = scripts/stderred
+	url = git://github.com/sickill/stderred.git
