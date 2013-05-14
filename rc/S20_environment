@@ -23,9 +23,6 @@ export MAIL="${HOME}/Mail/inbox"
 
 export RLWRAP_HOME=~/.cache/rlwrap/
 
-export LC_MESSAGES=C
-export LC_ALL=
-
 # detect chroot
 if [ `stat -c %i /` -eq 2 ]; then
 else
