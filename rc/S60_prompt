@@ -173,7 +173,7 @@ zle -N zle-keymap-select
 # this stuff updates screen and xterm titles as the command runs
 
 case $TERM in
-    xterm* | rxvt* | urxvt*)
+    xterm* | rxvt* | urxvt* | konsole*)
         function zsh_term_prompt_precmd {
                 print -Pn "\e]0;%n@%m: %~\a"
         }

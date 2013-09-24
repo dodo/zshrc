@@ -17,6 +17,7 @@ export MANWIDTH=80
 #export EDITOR=vim
 #export VISUAL=vim
 #export CCACHE_DIR=$HOME/.ccache
+export TERM=konsole-256color
 
 export INPUTRC="~/.inputrc"
 export MAIL="${HOME}/Mail/inbox"
