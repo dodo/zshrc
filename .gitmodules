@@ -22,3 +22,6 @@
 [submodule "scripts/stderred"]
 	path = scripts/stderred
 	url = git://github.com/sickill/stderred.git
+[submodule "scripts/git-cal"]
+	path = scripts/git-cal
+	url = git://github.com/k4rthik/git-cal.git
