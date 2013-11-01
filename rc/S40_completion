@@ -52,6 +52,10 @@ zstyle ':completion:*' file-patterns \
 
 zstyle ':completion:*:*:vi(m|):*:*files' ignored-patterns '*?.(aux|dvi|ps|pdf|bbl|toc|lot|lof|o|cm?)'
 
+
+[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
+
+
 ###-begin-npm-completion-###
 #
 # npm command completion script
