@@ -202,3 +202,6 @@ case $TERM in
 esac
 
 
+# put cursor at the bottom
+tput cup 999999999 2
+
