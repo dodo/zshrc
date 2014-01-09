@@ -31,3 +31,7 @@ alias powertop="sudo powertop"
 alias aiccu="sudo aiccu"
 alias i="ip a"
 
+alias gits="git ss"
+alias gitd="git d"
+alias gitdc="git dc"
+
