@@ -25,3 +25,6 @@
 [submodule "scripts/git-cal"]
 	path = scripts/git-cal
 	url = git://github.com/k4rthik/git-cal.git
+[submodule "plugin/history-substring-search"]
+	path = plugin/history-substring-search
+	url = git://github.com/zsh-users/zsh-history-substring-search.git
