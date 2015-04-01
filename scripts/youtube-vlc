@@ -7,4 +7,4 @@
 #
 
 COOKIE_FILE=/tmp/youtube-dl-cookies.txt
-vlc -I ncurses $(youtube-dl -g --cookies ${COOKIE_FILE} $*)
+vlc -v -I ncurses $(youtube-dl -g --cookies ${COOKIE_FILE} $*)
