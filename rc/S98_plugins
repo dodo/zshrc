@@ -1,36 +1,55 @@
 #!/bin/zsh
 
-source ~/.zsh/plugin/zaw/zaw.zsh
-
-source ~/.zsh/plugin/highlighting/zsh-syntax-highlighting.zsh
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root)
-
-# must be after highlighting
-source ~/.zsh/plugin/history-substring-search/zsh-history-substring-search.zsh
-# bind UP and DOWN arrow keys
-#zmodload zsh/terminfo
-#bindkey "$terminfo[kcuu1]" history-substring-search-up
-#bindkey "$terminfo[kcud1]" history-substring-search-down
-# # bind P and N for EMACS mode
-#bindkey -M emacs '^P' history-substring-search-up
-#bindkey -M emacs '^N' history-substring-search-down
-# # bind k and j for VI mode
-bindkey -M vicmd 'k' history-substring-search-up
-bindkey -M vicmd 'j' history-substring-search-down
-
-source ~/.zsh/plugin/git-extras.zsh
-
-. ~/.zsh/plugin/z/z.sh
-if complete &>/dev/null; then
-  complete -C 'z --complete "$COMP_LINE"' z
-elif compctl &>/dev/null; then
-  compctl -K 'z --complete "$COMP_LINE"' z
+if [ -f ~/.zsh/plugin/zaw/zaw.zsh ]
+then
+    source ~/.zsh/plugin/zaw/zaw.zsh
 fi
-function precmd () {
-  z --add "$(pwd -P)"
-}
 
-export LD_PRELOAD="$HOME/.zsh/scripts/stderred/lib64/libstderred.so${LD_PRELOAD:+:$LD_PRELOAD}"
+if [ -f ~/.zsh/plugin/highlighting/zsh-syntax-highlighting.zsh ]
+then
+source ~/.zsh/plugin/highlighting/zsh-syntax-highlighting.zsh
+    ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor root)
+fi
+
+if [ -f ~/.zsh/plugin/history-substring-search/zsh-history-substring-search.zsh ]
+then
+    # must be after highlighting
+    source ~/.zsh/plugin/history-substring-search/zsh-history-substring-search.zsh
+    # bind UP and DOWN arrow keys
+    #zmodload zsh/terminfo
+    #bindkey "$terminfo[kcuu1]" history-substring-search-up
+    #bindkey "$terminfo[kcud1]" history-substring-search-down
+    # # bind P and N for EMACS mode
+    #bindkey -M emacs '^P' history-substring-search-up
+    #bindkey -M emacs '^N' history-substring-search-down
+    # # bind k and j for VI mode
+    bindkey -M vicmd 'k' history-substring-search-up
+    bindkey -M vicmd 'j' history-substring-search-down
+fi
+
+if [ -f ~/.zsh/plugin/git-extras.zsh ]
+then
+    source ~/.zsh/plugin/git-extras.zsh
+fi
+
+if [ -f ~/.zsh/plugin/z/z.sh ]
+then
+    source ~/.zsh/plugin/z/z.sh
+    if complete &>/dev/null; then
+        complete -C 'z --complete "$COMP_LINE"' z
+    elif compctl &>/dev/null; then
+        compctl -K 'z --complete "$COMP_LINE"' z
+    fi
+    function precmd () {
+        z --add "$(pwd -P)"
+    }
+fi
+
+
+if [ -f ~/.zsh/scripts/stderred/lib64/libstderred.so ]
+then
+    export LD_PRELOAD="$HOME/.zsh/scripts/stderred/lib64/libstderred.so${LD_PRELOAD:+:$LD_PRELOAD}"
+fi
 
 fpath=(~/.zsh/plugin/completions/src $fpath)
 
