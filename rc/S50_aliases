@@ -8,6 +8,8 @@ if ( which sudo >/dev/null 2>/dev/null ) ; then
         alias sudo='export XAUTHORITY=${HOME}/.Xauthority ; sudo'
 fi
 
+alias fucking=sudo
+
 alias du="du -hcs"
 alias df="df -h"
 
